@@ -2,15 +2,14 @@
 # Concept Art English: Survival & Influence in AAA Pipelines
 
 project = 'Concept Art English'
-copyright = '2025, Concept Art English Project'
+copyright = '2026, Concept Art English Project'
 author = 'Concept Art English Team'
 
 extensions = [
-    'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
-    'sphinx.ext.intersphinx',
     'sphinx_markdown_tables',
+    'myst_parser',
 ]
 
 source_suffix = '.md'
@@ -32,13 +31,13 @@ myst_enable_extensions = [
     "html_admonition",
     "html_image",
     "colon_fence",
-    "table",
 ]
 
 # -- Language ----------------------------------------------------------
 language = 'en'
 
 # -- Intersphinx -------------------------------------------------------
-intersphinx_mapping = {
-    'python': ('https://docs.python.org/3', None),
-}
+# Disabled: requires external network access
+# intersphinx_mapping = {
+#     'python': ('https://docs.python.org/3', None),
+# }
